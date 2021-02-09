@@ -1,0 +1,4 @@
+ls -la
+echo hello world
+df -h
+free -h

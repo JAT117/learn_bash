@@ -1,0 +1,8 @@
+
+echo hello world
+df -h
+free -h
+ls -la
+ntpstat
+mpstat
+systemctl --failed | grep -i fail

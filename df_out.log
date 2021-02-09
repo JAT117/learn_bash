@@ -1,0 +1,11 @@
+Filesystem              Size  Used Avail Use% Mounted on
+devtmpfs                1.9G     0  1.9G   0% /dev
+tmpfs                   1.9G   29M  1.9G   2% /dev/shm
+tmpfs                   1.9G   10M  1.9G   1% /run
+tmpfs                   1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/mapper/cl_jt-root   49G   11G   39G  22% /
+/dev/mapper/cl_jt-home   24G  213M   24G   1% /home
+/dev/sda1               976M  257M  653M  29% /boot
+tmpfs                   376M  1.2M  375M   1% /run/user/42
+tmpfs                   376M  7.3M  369M   2% /run/user/0
+/dev/sr0                7.1G  7.1G     0 100% /run/media/root/CentOS-8-1-1911-x86_64-dvd
