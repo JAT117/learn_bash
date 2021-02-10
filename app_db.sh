@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#openstack server list --all --project cbam -c Name -Networks | grep "..-app.." > app_ip.txt
+#openstack server list --all --project cam -c Name -Networks | grep "..-app.." > app_ip.txt
 
 #| CAM195-app1                                                      | CAM_FE=192.168.2.5; CAM_OAM=10.52.249.104                      |
 #| CAM195-app2                                                      | CAM_FE=192.168.2.6; CAM_OAM=10.52.249.105                      |
