@@ -2,15 +2,15 @@
 
 #openstack server list --all --project cbam -c Name -Networks | grep "..-app.." > app_ip.txt
 
-#| CBAM195-app1                                                      | CBAM_FE=192.168.2.5; CBAM_OAM=10.52.249.104                      |
-#| CBAM195-app2                                                      | CBAM_FE=192.168.2.6; CBAM_OAM=10.52.249.105                      |
+#| CAM195-app1                                                      | CBAM_FE=192.168.2.5; CBAM_OAM=10.52.249.104                      |
+#| CAM195-app2                                                      | CBAM_FE=192.168.2.6; CBAM_OAM=10.52.249.105                      |
 
 #openstack server list --all --project cbam -c Name -Networks | grep "..-db.."  > db_ip.txt
 
 
-#| CBAM195-db1                                                       | CBAM_FE=192.168.2.7; CBAM_OAM=10.52.249.106; CBAM_BE=192.168.3.7 |
-#| CBAM195-db3                                                       | CBAM_FE=192.168.2.9; CBAM_OAM=10.52.249.108; CBAM_BE=192.168.3.9 |
-#| CBAM195-db2                                                       | CBAM_FE=192.168.2.8; CBAM_OAM=10.52.249.107; CBAM_BE=192.168.3.8 |
+#| CAM195-db1                                                       | CBAM_FE=192.168.2.7; CBAM_OAM=10.52.249.106; CBAM_BE=192.168.3.7 |
+#| CAM195-db3                                                       | CBAM_FE=192.168.2.9; CBAM_OAM=10.52.249.108; CBAM_BE=192.168.3.9 |
+#| CAM195-db2                                                       | CBAM_FE=192.168.2.8; CBAM_OAM=10.52.249.107; CBAM_BE=192.168.3.8 |
 
 
 if [-f app_ip.txt]
