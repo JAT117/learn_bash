@@ -1,4 +1,4 @@
 
-| CBAM195-app1                                                      | CBAM_FE=192.168.2.5; CBAM_OAM=10.52.249.104                      |
-| CBAM195-app2                                                      | CBAM_FE=192.168.2.6; CBAM_OAM=10.52.249.105                      |
+| CAM195-app1                                                      | CAM_FE=192.168.2.5; CAM_OAM=10.52.249.104                      |
+| CAM195-app2                                                      | CAM_FE=192.168.2.6; CAM_OAM=10.52.249.105                      |
 
