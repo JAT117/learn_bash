@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#chmod u+x app_db.sh
 #openstack server list --all --project cam -c Name -Networks | grep "..-app.." > app_ip.txt
 
 #| CAM195-app1                                                      | CAM_FE=192.168.2.5; CAM_OAM=10.52.249.104                      |
@@ -75,38 +75,38 @@ $db2_ip =
 $db3_ip =
 
 for n in {1..3}
-do
+	do
 
-if [ $n -eq 1 ]; then
-        echo "ssh -i <ssh key>.pem cam@<db1_ip>"
-		db_check db1_ip
-elif [ $n -eq 2 ];then
-        echo "ssh -i <ssh key>.pem cam@<db2_ip>"
-		db_check db1_ip
-elif [ $n -eq 3 ];then
-        echo "ssh -i <ssh key>.pem cam@<db3_ip>"
-		db_check db1_ip
+	if [ $n -eq 1 ]; then
+		echo "ssh -i <ssh key>.pem cam@<db1_ip>"
+			db_check db1_ip
+	elif [ $n -eq 2 ];then
+		echo "ssh -i <ssh key>.pem cam@<db2_ip>"
+			db_check db1_ip
+	elif [ $n -eq 3 ];then
+		echo "ssh -i <ssh key>.pem cam@<db3_ip>"
+			db_check db1_ip
 
-db_check(){
-	read SSHCAM
-$SSHCBAM  /bin/bash << EOF
+	db_check(){
+		read SSHCAM
+		$SSHCBAM  /bin/bash << EOF
 
-echo -e "sudo systemctl status etcd"
-#sudo systemctl status etcd
+		echo -e "sudo systemctl status etcd"
+		#sudo systemctl status etcd
 
-echo -e "sudo systemctl status mariadb"
-#sudo systemctl status mariadb
+		echo -e "sudo systemctl status mariadb"
+		#sudo systemctl status mariadb
 
-echo -e "sudo systemctl status mongod"
-#sudo systemctl status mongod
+		echo -e "sudo systemctl status mongod"
+		#sudo systemctl status mongod
 
-echo -e "sudo systemctl status rabbitmq-server"
-#sudo systemctl status rabbitmq-server
+		echo -e "sudo systemctl status rabbitmq-server"
+		#sudo systemctl status rabbitmq-server
 
-exit
-EOF
-}
+		exit
+		EOF
+	}
 
-fi
+	fi
 fi
 done
