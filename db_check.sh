@@ -1,10 +1,10 @@
 if [-f app_ip.txt];then
 
-app1_ip=`sed  -n '/app1/p' app.txt | grep -Po 'CBAM_OAM=\K[^ ]+' | tr -d ';'` 
-app2_ip=`sed  -n '/app2/p' dpp.txt | grep -Po 'CBAM_OAM=\K[^ ]+' | tr -d ';'`
+app1_ip=`sed  -n '/app1/p' app.txt | grep -Po 'CAM_OAM=\K[^ ]+' | tr -d ';'` 
+app2_ip=`sed  -n '/app2/p' dpp.txt | grep -Po 'CAM_OAM=\K[^ ]+' | tr -d ';'`
 
-app1="ssh -i CBAM195_key.pem cbam@"$app2_ip
-app2="ssh -i CBAM195_key.pem cbam@"$app2_ip
+app1="ssh -i CAM195_key.pem cam@"$app2_ip
+app2="ssh -i CAM195_key.pem cam@"$app2_ip
 
 
 for n in {1..2}
