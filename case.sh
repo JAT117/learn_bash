@@ -1,16 +1,17 @@
 #!/bin/bash
-# case example
+
+#Bash "case" example
 case $1 in
 	start)
-	 echo starting
+	 echo "starting"
 	 ;;
 	stop)
-	 echo stoping
+	 echo "stoping"
 	 ;;
 	restart)
-	 echo restarting
+	 echo "restarting"
 	 ;;
 	*)
-	echo don\'t know
+	 echo "don't know"
 	 ;;
 esac
